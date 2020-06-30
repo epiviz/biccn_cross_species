@@ -5,13 +5,12 @@
     <title>Epiviz BICCN Cross-species</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1, user-scalable=yes">
-    <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
-    <script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-    <script src="bower_components/epiviz-charts/src/renderingQueues/renderingQueue.js"></script>
-
-    <link rel="import" href="bower_components/epiviz-data-source/epiviz-data-source.html">
-    <link rel="import" href="bower_components/epiviz-charts/epiviz-charts.html">
+    <script src="https://cdn.jsdelivr.net/gh/epiviz/epiviz-chart/cdn/jquery/dist/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/epiviz/epiviz-chart/cdn/jquery-ui/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/epiviz/epiviz-chart/cdn/renderingQueues/renderingQueue.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/epiviz/epiviz-chart/cdn/webcomponentsjs/webcomponents-lite.js"></script>
+    
+    <link rel="import" href="https://cdn.jsdelivr.net/gh/epiviz/epiviz-chart/cdn/epiviz-components.html">
 </head>
 
 <body>
@@ -34,7 +33,7 @@
         <!-- add ATAC signal for the cell types -->
         <epiviz-multistacked-line-track
             slot="charts"
-            dim-s='["Human_MOp_ATAC_Subclass_SST", "Human_MOp_ATAC_Subclass_VIP"]'
+            dim-s='["Human_MOp_ATAC_Subclass_Astro", "Human_MOp_ATAC_Subclass_Endo", "Human_MOp_ATAC_Subclass_L2-3_IT", "Human_MOp_ATAC_Subclass_L5_ET", "Human_MOp_ATAC_Subclass_L5_IT", "Human_MOp_ATAC_Subclass_L5-6_NP", "Human_MOp_ATAC_Subclass_L6_CT", "Human_MOp_ATAC_Subclass_L6_IT_Car3", "Human_MOp_ATAC_Subclass_L6_IT", "Human_MOp_ATAC_Subclass_L6b", "Human_MOp_ATAC_Subclass_LAMP5", "Human_MOp_ATAC_Subclass_Micro-PVM", "Human_MOp_ATAC_Subclass_Oligo", "Human_MOp_ATAC_Subclass_OPC", "Human_MOp_ATAC_Subclass_PVALB", "Human_MOp_ATAC_Subclass_SNCG", "Human_MOp_ATAC_Subclass_SST_CHODL", "Human_MOp_ATAC_Subclass_SST", "Human_MOp_ATAC_Subclass_VIP", "Human_MOp_ATAC_Subclass_VLMC"]'
             chart-settings='{"title":"ATAC Signal","marginTop":25,"marginBottom":23,"marginLeft":20,"marginRight":10,"measurementGroupsAggregator":"mean-stdev","step":1,"showPoints":false,"showLines":true,"showFill":true,"showErrorBars":true,"pointRadius":1,"lineThickness":1,"yMin":"default","yMax":1,"interpolation":"basis","abLine":"default"}'
             style="height:225px">
         </epiviz-multistacked-line-track>
